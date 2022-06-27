@@ -1,10 +1,48 @@
 import Home from './views/Home.vue'
 import About from './views/About.vue'
 import NotFound from './views/NotFound.vue'
+import Bets from './components/bets/Bets.vue'
+import AllBets from './components/bets/AllBets.vue'
+import ConsecBets from './components/bets/ConsecBets.vue'
+import { MenuKeyEnum } from './constants/menuKey'
+import { RouterOptions } from 'vue-router'
 
 /** @type {import('vue-router').RouterOptions['routes']} */
 export const routes = [
-  { path: '/', component: Home, meta: { title: 'Home' } },
+  { 
+    path: '/', 
+    component: Home, 
+    meta: { title: 'Home' },
+    children: [
+      {
+        name: MenuKeyEnum.AllBets,
+        path: `/${MenuKeyEnum.AllBets}`,
+        component: AllBets
+      },
+      {
+        name: MenuKeyEnum.ConsecBets,
+        path: `/${MenuKeyEnum.ConsecBets}`,
+        component: ConsecBets
+      },
+    ]
+  },
+  {
+    name: MenuKeyEnum.Bets,
+    path: `/${MenuKeyEnum.Bets}`,
+    component: Bets,
+    children: [
+      {
+        name: MenuKeyEnum.AllBets,
+        path: `/${MenuKeyEnum.AllBets}`,
+        component: AllBets
+      },
+      {
+        name: MenuKeyEnum.ConsecBets,
+        path: `/${MenuKeyEnum.ConsecBets}`,
+        component: ConsecBets
+      },
+    ]
+  },
   {
     path: '/about',
     meta: { title: 'About' },
