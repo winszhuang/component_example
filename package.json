@@ -10,7 +10,7 @@
     "@vueuse/core": "^8.7.4",
     "typescript": "^4.7.4",
     "vue": "^3.2.37",
-    "vue-router": "^4.0.16"
+    "vue-router": "^4.1.1"
   },
   "devDependencies": {
     "@headlessui/vue": "^1.6.4",
