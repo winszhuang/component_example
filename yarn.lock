@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.18.5.tgz#337062363436a893a2d22faa60be5bb37091c83c"
   integrity sha512-YZWVaglMiplo7v8f1oMQ5ZPQr0vn7HPeZXxXWsxXJRjGVrzUFn9OxFQl1sb5wzfootjA/yChhW84BV+383FSOw==
 
-"@headlessui/vue@^1.6.4":
-  version "1.6.4"
-  resolved "https://registry.yarnpkg.com/@headlessui/vue/-/vue-1.6.4.tgz#8492bbb044a9b19ee92bef9cd4d0c3d8feed8588"
-  integrity sha512-axZMcfRLNuwHESPMgDb0Vj7xxlNPmsPl77pvoRZGzJh7lRdRic9kC/qbVM8G36OpIJRZzqrlADLQ2JIObhQjBg==
+"@headlessui/vue@^1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@headlessui/vue/-/vue-1.6.6.tgz#cf0313286503b10be99da5a93c910272cbed2b40"
+  integrity sha512-WyTqb9V0lVUrObdcmSks+21wOy+JsJw8tAiw7Yy5qInOgKVfIVa7EwldtURkA5cgo9ycZRrzcWluFEeabvI0MQ==
 
 "@heroicons/vue@^1.0.6":
   version "1.0.6"
